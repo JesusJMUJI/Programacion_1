@@ -1,1 +1,1 @@
-folder
+Carpeta de las prácticas hechas en el LAB2 de Programación I
