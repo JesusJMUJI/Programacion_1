@@ -3,6 +3,7 @@ from turtle import *
 pantalla = Screen()
 pantalla.setup(800,800)
 tortuga = Turtle()
+tortuga.speed(speed=10)
 
 numDibujos = int(input("Numero de dibujos: "))
 grosor = randint(1,20)
