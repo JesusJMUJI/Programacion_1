@@ -1,5 +1,5 @@
 horasPark = int(input("Horas aparcadas: "))
-print(horasPark)
+print('Has aparcado una cantidad de: ' + str(horasPark))
 precioH = 0
 
 if horasPark < 24:
@@ -9,16 +9,16 @@ else :
     dias = horasPark / 24
     if dias > 2 and dias < 5:
         precioH = 6 * dias
-        print(precioH)
+        print('El precio por aparcar es: {0}'.format(dias))
     else:
         if dias > 6 and dias < 14:
           precioH = 5.5 * dias
-          print(precioH)
+          print('El precio por aparcar es: {0}'.format(dias))
         else:
             if dias > 15:
                 precioH = 3.66 * dias
-                print(precioH)
-    print(dias)        
+                print('El precio por aparcar es: {0}'.format(dias))
+    print('Días aparcados: {0}'.format(dias))      
 
 
 
