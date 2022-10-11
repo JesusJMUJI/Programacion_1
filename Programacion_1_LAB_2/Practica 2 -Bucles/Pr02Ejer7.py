@@ -1,22 +1,23 @@
 from turtle import *
 
 pantalla = Screen()
-pantalla.setup(400,400)
 tortuga = Turtle()
-tortuga.speed(speed=0)
-distTortugas = int(input("Distancia entre tortugas: "))
+tortuga.speed(speed=10)
+tortuga.shape("turtle")
+tortuga.penup()
 
-while tortuga.pos() < (400,400):
-    tortuga.forward(2+distTortugas/4)
-    tortuga.left(30-distTortugas/12)
+pantallaX = int(input('Introduce el ancho de la pantalla: '))
+pantallaY = int(input('Introduce el alto de la pantalla: '))
 
+anguloGiroInput = int(input("Angulo de giro: "))
+separacionInput = int(input("Separacion de tortugas: "))
+
+forwardGiro = 0
+pantalla.setup(pantallaX,pantallaY)
+while abs(tortuga.xcor())<= (pantallaX / 2) and abs(tortuga.ycor()) <= (pantallaY / 2):
+    tortuga.forward(forwardGiro)
+    tortuga.stamp()
+    forwardGiro = forwardGiro + separacionInput
+    tortuga.left(anguloGiroInput)
+    print(tortuga.pos())
 pantalla.exitonclick()
-
-""" import turtle
-
-a = turtle.Turtle()
-for i in range(240):
-    a.forward(2+i/4)
-    a.left(30-i/12)
-
-turtle.done() """
