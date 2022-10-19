@@ -25,5 +25,5 @@ while userInput:
         grosor = randint(1,20)
     userInput = input("Desea continuar? (y/n): ")
     if userInput == "n":
-        break
+        pantalla.exitonclick()
 pantalla.exitonclick()

@@ -2,7 +2,7 @@ from random import randint, random
 from turtle import *
 
 tortuga = Turtle()
-tortuga.speed(speed=10)
+tortuga.speed(speed=0)
 
 pantalla = Screen()
 pantallaX = int(input('Introduce el ancho de la pantalla: '))
@@ -36,12 +36,10 @@ while pasosDados < numPasos:
             print("Fuera de perimetro")
             print(tortuga.pos())
             pantalla.exitonclick()
-            break
     else:
         print("Fuera de pantalla")
         print(tortuga.pos())
         pantalla.exitonclick()
-        break
 else:
     print("Condicion cumplida")
     print(tortuga.pos())
