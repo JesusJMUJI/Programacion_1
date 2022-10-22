@@ -1,7 +1,7 @@
 from turtle import *
 
 pantalla = Screen()
-pantalla.setup(2000,2000)
+pantalla.setup(800,800)
 tortuga = Turtle()
 
 numPeldanos = int (input("Numero de peldaños: "))

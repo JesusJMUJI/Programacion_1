@@ -5,7 +5,7 @@ import math
 tortuga = Turtle()
 screen = Screen()
 screen.setup(800,800)
-#tortuga.speed(10)
+tortuga.speed(0)
 
 lados = int(input("Lados del polígono: "))
 longitud = int(input("Longitud del lado: "))
@@ -30,13 +30,18 @@ for x in range(lados):
     tortuga.pendown()
 # Crear tantos circulos mientras la tortuga no supere
 # finX y finY
-    posX = [tortuga.xcor(),tortuga.ycor()]
+    dist = math.sqrt((inicioX - tortuga.xcor())**2 + (inicioY - tortuga.ycor())**2)
     
-    while math.dist(posX,) < (finX,finY):
-
+    while dist <= longitud:
         tortuga.circle(radioDecor)
+        tortuga.penup()
         tortuga.forward(radioDecor)
+        tortuga.pendown()
+        dist = math.sqrt((inicioX - tortuga.xcor())**2 + (inicioY - tortuga.ycor())**2)
+
     tortuga.penup()
     tortuga.goto(finX,finY)
     tortuga.left(anguloInterno)
     tortuga.pendown()
+
+screen.exitonclick()
