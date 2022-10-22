@@ -3,7 +3,7 @@ from turtle import *
 tortuga = Turtle()
 screen = Screen()
 screen.setup(800, 800)
-# tortuga.speed(speed=10)
+tortuga.speed(speed=0)
 
 lados = int(input("Lados del polígono: "))
 longitud = int(input("Longitud del lado: "))
@@ -11,6 +11,7 @@ radioDecor = int(input("Radio del decorado: "))
 
 for x in range(lados):
     tortuga.forward(longitud)
+    tortuga.backward
     tortuga.left(360 / lados)
 
 tortuga.penup()
@@ -19,10 +20,11 @@ tortuga.forward(radioDecor * 2)
 tortuga.left(90)
 tortuga.pendown()
 
+inicioX = tortuga.xcor()
+inicioY = tortuga.ycor()
+
 anguloInterno = 360 / lados
 for i in range(lados):
-    inicioX = tortuga.xcor()
-    inicioY = tortuga.ycor()
     distancia = tortuga.distance(inicioX, inicioY)
     while longitud - distancia >= radioDecor:
         tortuga.circle(radioDecor)
