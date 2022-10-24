@@ -1,7 +1,7 @@
 lista = []
 
 while len(lista) < 3:
-    userInput = int(input("Esnter a number: "))
+    userInput = int(input("Enter a number: "))
     lista.append(userInput)
 
 for i in range(len(lista)):
