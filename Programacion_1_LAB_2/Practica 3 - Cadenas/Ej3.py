@@ -11,6 +11,13 @@ if longitud(len(cadena1)) <= longitud(len(cadena2)):
 
 ''' 
 
+cad1 = input()
+cad2 = input()
+if (len(cad1) <= len(cad2))
+    if cad1 == cad2
+    else
+        recorrer cad2
+            si letra de cad2 == cad1[0]
 si long cadena1 <= long cadena 2 entonces
     noes = true
     i = 0

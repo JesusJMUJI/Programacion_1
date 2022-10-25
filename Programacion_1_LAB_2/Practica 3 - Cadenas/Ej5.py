@@ -1,7 +1,6 @@
-num = int(input("Dime algunos números enteros: "))
-lista = []
-numToStr = str(num)
-for i in range(len(numToStr)):
-    lista.append(i)
+num = input("Dime algunos números enteros: ")
+numList = []
 
-print(numToStr)
+for i in range(len(num)):
+    numList[i] = num - 1
+print(numList)
