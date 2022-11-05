@@ -9,14 +9,10 @@ A = []
 for i in range(filas):
     A.append([0] * column)
 
-matrizProducto = []
-for i in range(filas):
-    matrizProducto.append([producto])
-
 # Leer la matriz
 for i in range(filas):
     for j in range(column):
-        A[i][j] = float(input("Dime el elemento ({0},{1}): ".format(i, j)))
+        A[i][j] = int(input("Dime el elemento ({0},{1}): ".format(i, j)))
 
 # Creacion de la matriz nula de C
 C = []
@@ -26,10 +22,10 @@ for i in range(filas):
 # Cálculo de producto de la matriz
 for i in range(filas):
     for j in range(column):
-        C[i][j] = A[i][j] * matrizProducto[i][j]
+        C[i][j] = A[i][j] * producto
 
 # Mostrar la matriz de C
 for i in range(filas):
     for j in range(column):
-        print(C[i][j], end="")
+        print(C[i][j], end=" ")
     print()
