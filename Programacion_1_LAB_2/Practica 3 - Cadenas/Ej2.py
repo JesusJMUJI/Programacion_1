@@ -13,7 +13,6 @@ for character in cadena:
         palabra += character
         ant = character
 if len(palabra) > 0:
-    contador+=1
+    contador += 1
 print('numero de palabras : ', contador)
 print(cadenaNueva)
-
