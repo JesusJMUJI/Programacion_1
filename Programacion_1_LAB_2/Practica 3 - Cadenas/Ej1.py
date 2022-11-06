@@ -1,3 +1,6 @@
+print("Práctica 3 - Ejercicio 1")
+print("")
+
 word = input("Escribe una palabra en español para convertirla al gerundio en ingles:  ")
 cadena = ''
 
