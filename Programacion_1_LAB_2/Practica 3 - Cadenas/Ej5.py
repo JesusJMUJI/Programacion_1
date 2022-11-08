@@ -1,6 +1,13 @@
-num = input("Dime algunos números enteros: ")
-numList = []
+print("Práctica 3 - Ejercicio 5")
+print("")
 
-for i in range(len(num)):
-    numList[i] = num - 1
-print(numList)
+numInput = int(input("Dime un números entero: "))
+numDivision = 0
+lista = []
+resto = 0
+
+while numInput > 0:
+	resto = numInput % 10
+	numInput = numInput // 10
+	lista = [resto] + lista
+print(lista)

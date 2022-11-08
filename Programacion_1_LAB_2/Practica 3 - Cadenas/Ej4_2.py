@@ -13,7 +13,6 @@ ganador = False
 x = 0
 y = 0
 
-
 for numero in range(0, 4):
     codigoRandom = codigoRandom + str(randint(1, 9))
 print(codigoRandom)
@@ -25,7 +24,7 @@ while not ganador:
             y += 1
             if i == j and x == y:
                 coincidenciasToros += 1
-            elif i == j:
+            elif i == j and x != y:
                 coincidenciasVacas += 1
         y = 0
     if coincidenciasToros == 4:
