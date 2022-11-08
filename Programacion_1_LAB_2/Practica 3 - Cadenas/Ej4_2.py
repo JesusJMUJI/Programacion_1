@@ -14,12 +14,34 @@ x = 0
 y = 0
 
 
-for numero in range(0,4):
-    codigoRandom = codigoRandom + str(randint(1,9))
+for numero in range(0, 4):
+    codigoRandom = codigoRandom + str(randint(1, 9))
 print(codigoRandom)
 
-for i in inputCadena:
-    x+=1
+while not ganador:
+    for i in inputCadena:
+        x += 1
+        for j in codigoRandom:
+            y += 1
+            if i == j and x == y:
+                coincidenciasToros += 1
+            elif i == j:
+                coincidenciasVacas += 1
+        y = 0
+    if coincidenciasToros == 4:
+        ganador = True
+    else:
+        print("HAS FALLADO: Toros: {0} y Vacas {1}".format(coincidenciasToros, coincidenciasVacas))
+        coincidenciasToros = 0
+        coincidenciasVacas = 0
+        x = 0
+        y = 0
+        inputCadena = input("¿Cual es tu intento?: ")
+
+print("Enhorabuena! Has acertado, el numero era: {0}".format(codigoRandom))
+
+'''for i in inputCadena:
+    x += 1
     for j in codigoRandom:
         y += 1
         if i == j:
@@ -27,10 +49,4 @@ for i in inputCadena:
                 coincidenciasToros += 1
             else:
                 coincidenciasVacas += 1
-
-print("Toros: " + str(coincidenciasToros) + "Vacas: " + str(coincidenciasToros))
-    
-
-
-
-
+'''
