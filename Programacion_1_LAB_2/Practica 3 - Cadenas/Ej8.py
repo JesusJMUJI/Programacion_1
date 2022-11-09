@@ -1,30 +1,28 @@
 print("Práctica 2 - Ejercicio 8")
 print("")
 
-n = int(input("Dime como de grande es la matriz (n x n): "))
+numInput = int(input("Dime como de grande es la matriz (n x n): "))
 M = []
-for i in range(n):
-	M.append([0] * n)
+contador = 0
+for fila in range(numInput):
+	M.append([0] * numInput)
 
-for i in range(n):
-	for j in range(n):
-		if i == j:
-			M[i][j] = 0
-		if i != j:
-			M[i][j] = 1
-			if i < j:
-				M[i][j] = 2
-				if i == j + 1:
-					M[i][j] = -1
-			if i > j:
-				M[i][j] = -2
-				if i == j + 1:
-					M[i][j] = -1
+for fila in range(numInput):
+	contador = 0
+	for columna in range(numInput):
+		if fila == columna:
+			M[fila][columna] = 0
+		elif fila < columna:
+			contador += 1
+			M[fila][columna] = contador
+		elif fila > columna:
+			contador -= 1
+			M[fila][columna] = contador
 
 
-for i in range(n):
-	for j in range(n):
-		print(M[i][j], end=' ')
+for fila in range(numInput):
+	for columna in range(numInput):
+		print(M[fila][columna], end=' ')
 	print()
 
 print(M)

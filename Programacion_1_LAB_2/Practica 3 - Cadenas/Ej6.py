@@ -1,13 +1,13 @@
 print("Práctica 3 - Ejercicio 6")
 print("")
 
-num = int(input('Dime un numero: '))
+num = int(input('Dime un numero [-1 para acabar]: '))
 lista = []
 
 # Leer los dígitos de la lista
 while num > 0:
     lista.append(num)
-    num = int(input('Dime otro numero: '))
+    num = int(input('Dime otro numero [-1 para acabar]: '))
 
 # Calcular el numero
 print(lista)
