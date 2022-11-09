@@ -13,6 +13,8 @@ for fila in range(numInput):
 		if fila == columna:
 			M[fila][columna] = 0
 		elif fila < columna:
+			if contador < 0:
+				contador = 0
 			contador += 1
 			M[fila][columna] = contador
 		elif fila > columna:
