@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b25ed0df-c8fe-48db-aa5f-b2902d5ec867" name="Changes" comment="Ejercicio 242 hecho">
+      <change beforePath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej4_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej4_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej6.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GU2gXcHfKKGt6lu4wBsKR1csMk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jesus/OneDrive - Universitat Jaume I/Documentos/UJI - Universidad Jaume I/Programacion_1/Github/Programacion_1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.Ej6">
+    <configuration name="240" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programacion_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="ASYNCIO_DEBUGGER_ENV" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ACT_PREVIA_3ra_T5/240.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ej4_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programacion_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="ASYNCIO_DEBUGGER_ENV" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej4_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ej5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programacion_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="ASYNCIO_DEBUGGER_ENV" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ej6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programacion_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="ASYNCIO_DEBUGGER_ENV" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ej8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programacion_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas/Ej8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Ej6" />
+        <item itemvalue="Python.Ej5" />
+        <item itemvalue="Python.Ej4_2" />
+        <item itemvalue="Python.Ej8" />
+        <item itemvalue="Python.240" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b25ed0df-c8fe-48db-aa5f-b2902d5ec867" name="Changes" comment="" />
+      <created>1666428955611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666428955611</updated>
+      <workItem from="1666428957157" duration="34000" />
+      <workItem from="1666428999462" duration="400000" />
+      <workItem from="1666429532371" duration="126000" />
+      <workItem from="1666429787824" duration="492000" />
+      <workItem from="1666713543836" duration="2928000" />
+      <workItem from="1666716512335" duration="3000" />
+      <workItem from="1667402219719" duration="146000" />
+      <workItem from="1667643889499" duration="252000" />
+      <workItem from="1667644154196" duration="3055000" />
+      <workItem from="1667649248381" duration="175000" />
+      <workItem from="1667649442102" duration="102000" />
+      <workItem from="1667649592958" duration="1259000" />
+      <workItem from="1667650875714" duration="974000" />
+      <workItem from="1667652060148" duration="36000" />
+      <workItem from="1667652111199" duration="1275000" />
+      <workItem from="1667654761503" duration="1285000" />
+      <workItem from="1667658706869" duration="1401000" />
+      <workItem from="1667660420506" duration="351000" />
+      <workItem from="1667660878632" duration="215000" />
+      <workItem from="1667894972001" duration="2544000" />
+      <workItem from="1667915921538" duration="45000" />
+      <workItem from="1667916016731" duration="1631000" />
+      <workItem from="1667925396595" duration="6440000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adición de archivos vacios">
+      <created>1667402309415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667402309415</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cambios del sabado, falta el 242 por terminar">
+      <created>1667650251680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667650251680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ejercicio 242 hecho">
+      <created>1667654241832</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667654241832</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adición de archivos vacios" />
+    <MESSAGE value="Cambios del sabado, falta el 242 por terminar" />
+    <MESSAGE value="Ejercicio 242 hecho" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 242 hecho" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej8.coverage" NAME="Ej8 Coverage Results" MODIFIED="1667660559258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej5.coverage" NAME="Ej5 Coverage Results" MODIFIED="1667930724793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Pr02Ejer10.coverage" NAME="Pr02Ejer10 Coverage Results" MODIFIED="1666430225173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 2 -Bucles" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Python.coverage" NAME="Python Coverage Results" MODIFIED="1666430199109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 2 -Bucles" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej2.coverage" NAME="Ej2 Coverage Results" MODIFIED="1666716229093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej4_2.coverage" NAME="Ej4_2 Coverage Results" MODIFIED="1667916057677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+    <SUITE FILE_PATH="coverage/Programacion_1$TestMatrix.coverage" NAME="TestMatrix Coverage Results" MODIFIED="1667649162752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$240.coverage" NAME="240 Coverage Results" MODIFIED="1667659181442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$238.coverage" NAME="238 Coverage Results" MODIFIED="1667644291960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej239.coverage" NAME="Ej239 Coverage Results" MODIFIED="1667646123865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej214.coverage" NAME="Ej214 Coverage Results" MODIFIED="1667650177557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej6.coverage" NAME="Ej6 Coverage Results" MODIFIED="1667931749623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+    <SUITE FILE_PATH="coverage/Programacion_1$242.coverage" NAME="242 Coverage Results" MODIFIED="1667654066571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ACT_PREVIA_3ra_T5" />
+    <SUITE FILE_PATH="coverage/Programacion_1$Ej4.coverage" NAME="Ej4 Coverage Results" MODIFIED="1666715958941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programacion_1_LAB_2/Practica 3 - Cadenas" />
+  </component>
+</project>
