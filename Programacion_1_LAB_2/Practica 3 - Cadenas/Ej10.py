@@ -14,16 +14,21 @@ for i in range(n):
 	for j in range(n):
 		M[i][j] = int(input("Dime el elemento ({0},{1}): ".format(i, j)))
 
-numero_celda = 0
-anterior = 0
+
 es_latino = True
 for fila in range(0, n):
-	anterior = 0
-	for columna in range(0, n):
-		numero_celda = M[fila][columna]
-		if numero_celda == anterior:
-			es_latino = False
-		anterior = numero_celda
+	for col_comparador in range(0, n-1):
+		comparador = M[fila][col_comparador]
+		for columna in range(col_comparador + 1, n):
+			if comparador == M[fila][columna]:
+				es_latino = False
+
+for columna in range(0, n):
+	for fila_comparador in range(0, n-1):
+		comparador = M[fila_comparador][columna]
+		for fila in range(fila_comparador + 1, n):
+			if comparador == M[fila][columna]:
+				es_latino = False
 
 if es_latino:
 	print("La matriz : ")

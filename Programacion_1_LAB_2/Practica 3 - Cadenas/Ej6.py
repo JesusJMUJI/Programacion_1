@@ -10,11 +10,10 @@ while num > 0:
     num = int(input('Dime otro numero [-1 para acabar]: '))
 
 # Calcular el numero
-print(lista)
 exponente = len(lista) - 1
 numero = 0
 for i in lista:
     numero = (i * (10 ** exponente)) + numero
     exponente -= 1
 
-print(numero)
+print("Tu lista es: {0} y el número que has pedido es: {1}".format(lista, numero))

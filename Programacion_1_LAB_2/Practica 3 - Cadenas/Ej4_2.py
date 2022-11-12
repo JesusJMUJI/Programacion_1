@@ -15,8 +15,9 @@ y = 0
 
 for numero in range(0, 4):
     codigoRandom = codigoRandom + str(randint(1, 9))
-print(codigoRandom)
+print("Pista para probar: {0}, es el código aleatorio. Este numero es solo para hacer pruebas.".format(codigoRandom))
 
+print("")
 while not ganador:
     for i in inputCadena:
         x += 1
@@ -38,14 +39,3 @@ while not ganador:
         inputCadena = input("¿Cual es tu intento?: ")
 
 print("Enhorabuena! Has acertado, el numero era: {0}".format(codigoRandom))
-
-'''for i in inputCadena:
-    x += 1
-    for j in codigoRandom:
-        y += 1
-        if i == j:
-            if x == y:
-                coincidenciasToros += 1
-            else:
-                coincidenciasVacas += 1
-'''
