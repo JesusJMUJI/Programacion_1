@@ -2,7 +2,17 @@ from modulo_test import test
 
 def es_narcisista (n):
     # El código de la función debe ir aquí
-    
+    potencia = len(str(n))
+    suma = 0
+    num = n
+    while num > 0:
+        digito = num % 10
+        print("digito: ", digito)
+        suma += digito ** potencia
+        print("suma: ", suma)
+        num = num // 10
+    return suma == n
+
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
 if __name__== '__main__':
