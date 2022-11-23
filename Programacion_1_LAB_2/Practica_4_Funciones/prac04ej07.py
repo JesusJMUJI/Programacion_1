@@ -1,9 +1,9 @@
 from modulo_test import test
-from ... import divisores
+from prac04ej03 import divisores
 
 def son_sociables (lista):
     # El código de la función debe ir aquí
-
+    lista_1 = divisores()
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
 if __name__== '__main__':

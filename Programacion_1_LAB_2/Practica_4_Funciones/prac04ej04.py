@@ -2,18 +2,15 @@ from modulo_test import test
 
 def contenido_GC (adn):
     # El código de la función debe ir aquí
-    contador_g = 0
-    contador_c = 0
-    contador_total = 0
+    contador = 0
     for elem in adn:
         if elem == 'G':
-            contador_g += 1
+            contador += 1
         elif elem == 'C':
-            contador_c += 1
-    contador_total = contador_c + contador_g
-    porcentaje = (contador_total * 100) / len(adn)
-    print("Procentaje: {0}".format(porcentaje))
-    return porcentaje
+            contador += 1
+    porcentaje = (contador / len(adn)) * 100
+    print("Procentaje: {:.2f}".format(porcentaje))
+    return round(porcentaje, 2)
 
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
