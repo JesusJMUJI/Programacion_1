@@ -2,7 +2,25 @@ from modulo_test import test
 
 def es_cuadrado_latino (matriz):
     # El código de la función debe ir aquí
+    es_latino = True
+    for fila in range(0, len(matriz)):
+        for col_comparador in range(0, len(matriz) - 1):
+            comparador = matriz[fila][col_comparador]
+            for columna in range(col_comparador + 1, len(matriz)):
+                if comparador == matriz[fila][columna]:
+                    es_latino = False
 
+    for columna in range(0, len(matriz)):
+        for fila_comparador in range(0, len(matriz) - 1):
+            comparador = matriz[fila_comparador][columna]
+            for fila in range(fila_comparador + 1, len(matriz)):
+                if comparador == matriz[fila][columna]:
+                    es_latino = False
+
+    if es_latino:
+        return True
+    else:
+        return False
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
 if __name__== '__main__':

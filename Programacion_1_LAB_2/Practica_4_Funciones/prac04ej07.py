@@ -3,7 +3,13 @@ from prac04ej03 import divisores
 
 def son_sociables (lista):
     # El código de la función debe ir aquí
-    lista_1 = divisores()
+    lista_div = divisores(lista)
+    suma_lista = 0
+    for elem in lista_div:
+        suma_lista += elem
+    if suma_lista - lista == lista:
+        return lista
+
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
 if __name__== '__main__':
