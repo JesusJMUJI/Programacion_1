@@ -6,21 +6,24 @@ def es_cuadrado_latino (matriz):
     for fila in range(0, len(matriz)):
         for col_comparador in range(0, len(matriz) - 1):
             comparador = matriz[fila][col_comparador]
-            for columna in range(col_comparador + 1, len(matriz)):
-                if comparador == matriz[fila][columna]:
-                    es_latino = False
+            if comparador == 0 or comparador > len(matriz):
+                es_latino = False
+            else:
+                for columna in range(col_comparador + 1, len(matriz)):
+                    if comparador == matriz[fila][columna]:
+                        es_latino = False
 
     for columna in range(0, len(matriz)):
         for fila_comparador in range(0, len(matriz) - 1):
             comparador = matriz[fila_comparador][columna]
-            for fila in range(fila_comparador + 1, len(matriz)):
-                if comparador == matriz[fila][columna]:
-                    es_latino = False
+            if comparador == 0 or comparador > len(matriz):
+                es_latino = False
+            else:
+                for fila in range(fila_comparador + 1, len(matriz)):
+                    if comparador == matriz[fila][columna]:
+                        es_latino = False
 
-    if es_latino:
-        return True
-    else:
-        return False
+    return es_latino
 # –- Programa principal –-
 # Ejecutar el test sólo al ejecutar el fichero (y no al importarlo)
 if __name__== '__main__':
@@ -58,3 +61,4 @@ if __name__== '__main__':
     test(es_cuadrado_latino(matriz6) == False)
     test(es_cuadrado_latino(matriz7) == False)
     test(es_cuadrado_latino(matriz8) == False)
+
