@@ -4,6 +4,9 @@ import sys
 
 from random import randint
 
+# Variables
+matriz_oculta = []
+matriz_visible = []
 # Constantes
 C0='0'
 C1='1'
@@ -18,15 +21,25 @@ CBOMBA='B'
 CFLAG='F'
 COCULTA='-'
 
+# Función para crear el tablero visible
 def crear_tablero_visible(filas, columnas):
     # El código de la función debe ir aquí
+    for i in (filas):
+        matriz_visible.append([C0].append(columnas))
 
+# Función para crear el tablero oculto
 def crear_tablero_oculto(filas, columnas):
     # El código de la función debe ir aquí
+    for i in (filas):
+        matriz_oculta.append([COCULTA].append(columnas))
 
+# Función para poner las bombas en el tablero oculto
 def poner_bombas_tablero_oculto(toculto, bombas):
     # El código de la función debe ir aquí
+    for i in (bombas):
+        matriz_oculta.append([CBOMBA].append(bombas))
 
+# Función para poner la información en el tablero oculto
 def poner_info_tablero_oculto(toculto):
     filas = len(toculto)
     columnas = len(toculto[0])
@@ -52,19 +65,32 @@ def poner_info_tablero_oculto(toculto):
 
 def imprimir_tablero(tablero):
     # El código de la función debe ir aquí
+    for i in (tablero):
+        print(tablero)
 
 def tablero_visible_destapar(tvisible, toculto, fila, columna):
     # El código de la función debe ir aquí
     
+
 def tablero_visible_marcar(tvisible, fila, columna, onoff):
     # El código de la función debe ir aquí
+
 
 def comprobar_tablero_visible(tvisible, toculto, bombas):
     # El código de la función debe ir aquí
 
+
 def menu_buscaminas():
     # El código de la función debe ir aquí
-    ...
+    
+    opcion = 0
+    while opcion < 0 or opcion > 5:
+        print("1. Destapar casilla")
+        print("2. Marcar casilla")
+        print("3. Comprobar tablero")
+        print("4. Bombas por detectar")
+        print("5. Salir")
+        opcion = int(input("Opción: "))
     return opcion
     
 def main():

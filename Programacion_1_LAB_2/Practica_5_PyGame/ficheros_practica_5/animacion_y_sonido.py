@@ -25,6 +25,9 @@ def main():
     cat = pygame.image.load('cat.png')
     cat_x = int(input("Coodernada X del gato: "))
     cat_y = int(input("Coodernada X del gato: "))
+
+    #Variables
+    bounds = pygame.Rect(0, 0, SCREEN_W, SCREEN_H)
     (cat_size_x, cat_size_y) = cat.get_size()
 
     # Inicialización de ángulo de gato
@@ -59,7 +62,7 @@ def main():
         elif direction == 'NO':
             cat_x -= 5
             cat_y += 5
-            if cat_x <= SCREEN_W or cat_Y <= SCREEN_H:
+            if cat_x <= SCREEN_W or cat_y <= SCREEN_H:
                 direction = 'NE'
 
         """
