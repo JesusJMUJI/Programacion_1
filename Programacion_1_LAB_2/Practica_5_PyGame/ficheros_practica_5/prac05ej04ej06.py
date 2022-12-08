@@ -38,8 +38,13 @@ def crear_tablero_oculto(filas, columnas):
 # Función para poner las bombas en el tablero oculto
 def poner_bombas_tablero_oculto(toculto, bombas):
 	# El código de la función debe ir aquí
-	for i in bombas:
-		toculto.append([CBOMBA].append(bombas))
+	while bombas > # NUMERO DE BOMBAS SEGUN EL NIVEL DE DIFICULTAD:
+		for fila in range(toculto):
+			for columna in range(toculto):
+				if randint(0, 1) == 1:
+					columna = CBOMBA
+			if randint(0, 1) == 1:
+				fila = CBOMBA
 
 # Función para poner la información en el tablero oculto
 def poner_info_tablero_oculto(toculto):
@@ -83,8 +88,8 @@ def poner_info_tablero_oculto(toculto):
 
 def imprimir_tablero(tablero):
 	# El código de la función debe ir aquí
-	for i in (tablero):
-		print(tablero)
+	for i in tablero:
+		print(i)
 
 def tablero_visible_destapar(tvisible, toculto, fila, columna):
 	# El código de la función debe ir aquí
