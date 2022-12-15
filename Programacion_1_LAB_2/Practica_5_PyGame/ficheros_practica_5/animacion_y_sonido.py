@@ -99,21 +99,35 @@ def main():
                 finished = True
             elif event.type == MOUSEBUTTONDOWN:
                 if event.button == 1:
-                    pygame.mouse.get_pos()
-                    print("Click izquierdo" + str(pygame.mouse.get_pos()))
+                    mousePos = pygame.mouse.get_pos()
+
+                    borderLeft = cat_x
+                    borderRight = cat_x + cat_size_x
+                    borderTop = cat_y + cat_size_y
+                    borderBottom = cat_y
+
+                    insideX = mousePos[0] >= borderLeft and mousePos[0] <= borderRight
+                    insideY = mousePos[1] <= borderTop and mousePos[1] >= borderBottom
+                    print(insideY and insideX)
+                    if insideX and insideY:
+                        random_direction = randint(0, 3)
+                        if random_direction == 0:
+                            direction = 'NE'
+                        elif random_direction == 1:
+                            direction = 'SE'
+                        elif random_direction == 2:
+                            direction = 'NO'
+                        else:
+                            direction = 'SO'
+                        
+                        beep.play()
+                        time.sleep(0.5)
+                        beep.stop()
         # Visualizar en pantalla la superficie de dibujo
         pygame.display.update()
         fpsClock.tick(FPS)
     # Be IDLE friendly, my friend!!
     pygame.quit()
-
-
-def punto_dentro(posx, posy, dimx, dimy, x, y):
-    if posx <= x <= posx + dimx and posy <= y <= posy + dimy:
-        return True
-    else:
-        return False
-
 
 if __name__ == '__main__':
     main()

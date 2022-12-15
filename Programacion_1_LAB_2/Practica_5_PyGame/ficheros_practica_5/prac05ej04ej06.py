@@ -123,7 +123,7 @@ def imprimir_tablero(tablero):
     
 #def tablero_visible_destapar(tvisible, toculto, fila, columna):
     # El código de la función debe ir aquí
-
+    
 #def tablero_visible_marcar(tvisible, fila, columna, onoff):
     # El código de la función debe ir aquí
 
