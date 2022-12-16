@@ -112,21 +112,20 @@ def poner_info_tablero_oculto(toculto):
 
 
 def imprimir_tablero(tablero):
-	# El código de la función debe ir aquí
 	for i in range(len(tablero)):
 		for j in range(len(tablero)):
 			print(tablero[i][j], end='\t')
 		print()
 
 
+# Función para destapar una casilla
 def tablero_visible_destapar(tvisible, toculto, fila, columna):
-	# El código de la función debe ir aquí
 	print()
 	print("Destapando casilla")
 	fila, columna = seleccionar_fila_columnas(fila, columna, "Introduce la fila y la columna a destapar")
 	print()
 
-	print("Has marcado la casilla {0},{1}".format(fila, columna))
+	print("Has destapado la casilla {0},{1}".format(fila + 1, columna + 1))
 	if toculto[fila][columna] == CBOMBA:
 		tvisible[fila][columna] = CBOMBA
 		print("Has perdido")
@@ -136,23 +135,24 @@ def tablero_visible_destapar(tvisible, toculto, fila, columna):
 		return False
 
 
+# Función para marcar una casilla
 def tablero_visible_marcar(tvisible, fila, columna, onoff):
 	celda_marcada = 0
 	print()
-	print("Marcando casilla")
+	print("Marcando casilla...")
 
 	columna, fila = seleccionar_fila_columnas(columna, fila, "Introduce la fila y la columna a marcar")
 	if onoff:
 		if tvisible[fila][columna] == C0:
 			tvisible[fila][columna] = CFLAG
 			celda_marcada = 1
-			print("Has marcado la casilla {0} {1}".format(fila, columna))
+			print("Has marcado la casilla {0},{1}".format(fila + 1, columna + 1))
 
 	elif not onoff:
 		if tvisible[fila][columna] == CFLAG:
 			tvisible[fila][columna] = C0
 			celda_marcada = -1
-			print("Has desmarcado la casilla {0} {1}".format(fila, columna))
+			print("Has desmarcado la casilla {0},{1}".format(fila + 1, columna + 1))
 
 	else:
 		print("Introduce una opción válida")
@@ -162,8 +162,8 @@ def tablero_visible_marcar(tvisible, fila, columna, onoff):
 	return celda_marcada
 
 
+# Función para comprobar las bombas restantes
 def comprobar_tablero_visible(tvisible, toculto, bombas):
-	# El código de la función debe ir aquí
 	bombas_reveladas = 0
 	print()
 	print("Comprobando tablero...")
@@ -181,8 +181,9 @@ def comprobar_tablero_visible(tvisible, toculto, bombas):
 		return False
 
 
+# Menú para las opciones del buscaminas
+# HE INCLUIDO UNA OPCION SECRETA PARA ACTIVAR EL MODO DEBUG
 def menu_buscaminas():
-	# El código de la función debe ir aquí
 	print("Que quieres hacer?")
 	print("1. Destapar casilla")
 	print("2. Marcar casilla")
@@ -191,13 +192,18 @@ def menu_buscaminas():
 	print("5. Salir")
 	print()
 	opcion = int(input('Introduce la opción: '))
-	if opcion < 1 or opcion > 5:
+	if opcion == 0:
+		print("Estas intentando usar el modo debug")
+	elif opcion < 1 or opcion > 5:
 		print("Introduce una opción válida")
 		opcion = int(input('Introduce la opción: '))
 
+	print("Has elegido la opción {0}".format(opcion))
+	print()
 	return opcion
 
 
+# Función global para seleccionar la fila y la columna
 def seleccionar_fila_columnas(columna, fila, mensaje):
 	print(mensaje)
 	fila = int(input('Introduce la fila: ')) - 1
@@ -205,7 +211,9 @@ def seleccionar_fila_columnas(columna, fila, mensaje):
 	return columna, fila
 
 
+# Bucle principal del programa
 def main():
+	# Printea las opciones de dificultad
 	print("Bienvenido al buscaminas Pythonico")
 	print("Que dificultad quieres?")
 	print("1. Principiante")
@@ -215,6 +223,7 @@ def main():
 	dificultad = int(input("Opción: "))
 	print()
 
+	# Inicializa el tablero visible y el tablero oculto según la dificultad
 	filas = 0
 	columnas = 0
 	bombas = 0
@@ -230,7 +239,10 @@ def main():
 		filas = 16
 		columnas = 30
 		bombas = 99
+
+	# Dificultad secreta muy fácil para debuggear
 	elif dificultad == 4:
+		print("Has elegido la dificultad secreta, solo hay una bomba")
 		filas = 3
 		columnas = 3
 		bombas = 1
@@ -243,6 +255,7 @@ def main():
 	toculto = crear_tablero_oculto(filas, columnas)
 	onoff = None
 
+	# Crear las bombas
 	poner_bombas_tablero_oculto(toculto, bombas)
 	poner_info_tablero_oculto(toculto)
 	imprimir_tablero(tvisible)
@@ -251,26 +264,20 @@ def main():
 	ganar = False
 	perder = False
 
-	print("Quieres activar el modo debug? (s/n)")
-	debug = input()
-	if debug == "s":
-		imprimir_tablero(toculto)
-		print()
-
+	# Bucle principal del juego
 	while ganar == False and perder == False:
-		if debug == "s":
-			print("JUEGA DE FORMA RESPONSABLE ;)")
-			print("Tablero oculto, solo debug: {0} filas, {1} columnas y {2} bombas".format(filas, columnas, bombas))
-			imprimir_tablero(toculto)
-			print()
-
 		opcion = menu_buscaminas()
-
+		imprimir_tablero(tvisible)
 		if opcion == 1:
 			if tablero_visible_destapar(tvisible, toculto, filas, columnas):
 				perder = True
-			imprimir_tablero(tvisible)
-			print()
+				print("Has perdido!\n Tus marcas eran:")
+				imprimir_tablero(tvisible)
+				print("Las bombas estaban en:")
+				imprimir_tablero(toculto)
+			else:
+				imprimir_tablero(tvisible)
+				print()
 
 		elif opcion == 2:
 			tablero_visible_marcar(tvisible, filas, columnas, True)
@@ -297,10 +304,17 @@ def main():
 			print("Hasta luego, gracias por jugar")
 			exit()
 
+		# Opcion secreta para activar el modo debug
+		elif opcion == 0:
+			print("Quieres activar el modo debug? (s/n)")
+			debug = input()
+			if debug == "s":
+				print("JUEGA DE FORMA RESPONSABLE ;)")
+				print(
+					"Tablero oculto, solo debug: {0} filas, {1} columnas y {2} bombas".format(filas, columnas, bombas))
+				imprimir_tablero(toculto)
+				print()
 
-# –- Programa principal –-
-# Ejecutar el test solo al ejecutar el fichero (y no al importarlo)
+
 if __name__ == "__main__":
-	# El código para probar todas las funciones anteriores debe ir aquí
-	# ...
 	main()
