@@ -1,13 +1,4 @@
-import pygame
-from pygame.locals import *
-import sys
-
 from random import randint
-
-# Variables
-toculto = []
-tvisible = []
-onoff = False
 
 # Constantes
 C0 = '0'
@@ -130,50 +121,164 @@ def imprimir_tablero(tablero):
 
 def tablero_visible_destapar(tvisible, toculto, fila, columna):
 	# El código de la función debe ir aquí
+	print()
+	print("Destapando casilla")
 	print("Introduce la fila y la columna a destapar")
-	(fila, columna) = int(input('Introduce la fila: ')), int(input('Introduce la columna: '))
+	fila= int(input('Introduce la fila: '))
+	columna = int(input('Introduce la columna: '))
 	if toculto[fila][columna] == CBOMBA:
 		tvisible[fila][columna] = CBOMBA
 		print("Has perdido")
-		return False
+		return True
 	else:
 		tvisible[fila][columna] = toculto[fila][columna]
+		return False
+
+
+def tablero_visible_marcar(tvisible, fila, columna, onoff):
+	bomba_marcada = 0
+	bomba_no_marcada = None
+	print()
+	print("Marcando casilla")
+	while bomba_marcada == 0:
+		print("Introduce la fila y la columna a marcar")
+		(fila, columna) = int(input('Introduce la fila: ')), int(input('Introduce la columna: '))
+
+		while fila < 0 or fila > len(tvisible) or columna < 0 or columna > len(tvisible):
+
+			print("Introduce una fila y una columna válida")
+			(fila, columna) = int(input('Introduce la fila: ')), int(input('Introduce la columna: '))
+
+			print("Quieres marcar o desmarcar la casilla?")
+			onoff = input('Introduce "marcar" o "desmarcar": ')
+
+			if onoff == "marcar":
+				if tvisible[fila][columna] == C0:
+					tvisible[fila][columna] = CFLAG
+					if tvisible[fila][columna] == CBOMBA:
+						bomba_marcada = 1
+				else:
+					print("No puedes marcar esa casilla")
+
+			elif onoff == "desmarcar":
+				if tvisible[fila][columna] == CFLAG:
+					tvisible[fila][columna] = C0
+					bomba_marcada = -1
+				else:
+					print("No puedes desmarcar esa casilla")
+
+			else:
+				print("Introduce una opción válida")
+				(fila, columna) = int(input('Introduce la fila: ')), int(input('Introduce la columna: '))
+
+	print("Has marcado la casilla {0} {1}".format(fila, columna))
+	if bomba_marcada != 0:
+		return bomba_marcada
+	else:
+		return bomba_no_marcada
+
+
+def comprobar_tablero_visible(tvisible, toculto, bombas):
+	# El código de la función debe ir aquí
+	bombas_reveladas = 0
+	print()
+	print("Comprobando tablero")
+	for i in range(len(tvisible)):
+		for j in range(len(tvisible)):
+			if tvisible[i][j] == CFLAG and toculto[i][j] == CBOMBA:
+				bombas_reveladas += 1
+
+	print("Bombas reveladas: ", bombas_reveladas)
+	if bombas_reveladas == bombas:
 		return True
-# def tablero_visible_marcar(tvisible, fila, columna, onoff):
-# El código de la función debe ir aquí
-
-
-# def comprobar_tablero_visible(tvisible, toculto, bombas):
-# El código de la función debe ir aquí
+	else:
+		return False
 
 
 def menu_buscaminas():
 	# El código de la función debe ir aquí
+	print("Que quieres hacer?")
+	print("1. Destapar casilla")
+	print("2. Marcar casilla")
+	print("3. Comprobar tablero")
+	print("4. Bombas por detectar")
+	print("5. Salir")
+	print()
+	opcion = int(input('Introduce la opción: '))
+	if opcion < 1 or opcion > 5:
+		print("Introduce una opción válida")
+		opcion = int(input('Introduce la opción: '))
 
-	opcion = 0
-	while opcion < 0 or opcion > 5:
-		print("1. Destapar casilla")
-		print("2. Marcar casilla")
-		print("3. Comprobar tablero")
-		print("4. Bombas por detectar")
-		print("5. Salir")
-		opcion = int(input("Opción: "))
 	return opcion
 
 
 def main():
-	# El código de la función debe ir aquí
-	tvisible = crear_tablero_visible(5, 5)
-	toculto = crear_tablero_oculto(5, 5)
+	print("Bienvenido al buscaminas Pythonico")
+	print("Que dificultad quieres?")
+	print("1. Principiante")
+	print("2. Intermedio")
+	print("3. Experto")
+	print()
+	dificultad = int(input("Opción: "))
+	print()
 
-	imprimir_tablero(tvisible)
-	imprimir_tablero(toculto)
-	poner_bombas_tablero_oculto(toculto, 5)
+	filas = 0
+	columnas = 0
+	bombas = 0
+	if dificultad == 1:
+		filas = 8
+		columnas = 8
+		bombas = 10
+	elif dificultad == 2:
+		filas = 16
+		columnas = 16
+		bombas = 40
+	elif dificultad == 3:
+		filas = 16
+		columnas = 30
+		bombas = 99
+
+	else:
+		print("Introduce una opción válida")
+		print()
+		main()
+
+	tvisible = crear_tablero_visible(filas, columnas)
+	toculto = crear_tablero_oculto(filas, columnas)
+	onoff = None
+	poner_bombas_tablero_oculto(toculto, bombas)
 	poner_info_tablero_oculto(toculto)
+	imprimir_tablero(tvisible)
+	print()
+	print("Tablero oculto, solo debug: {0} filas, {1} columnas y {2} bombas".format(filas, columnas, bombas))
 	imprimir_tablero(toculto)
+	print()
 
+	opcion = menu_buscaminas()
 
-# menu_buscaminas()
+	if opcion == 1:
+		tablero_visible_destapar(tvisible, toculto, filas, columnas)
+		imprimir_tablero(tvisible)
+		print()
+
+	elif opcion == 2:
+		tablero_visible_marcar(tvisible, filas, columnas, onoff)
+		imprimir_tablero(tvisible)
+		print()
+
+	elif opcion == 3:
+		comprobar_tablero_visible(tvisible, toculto, bombas)
+		imprimir_tablero(tvisible)
+		print()
+
+	elif opcion == 4:
+		comprobar_tablero_visible(tvisible, toculto, bombas)
+		imprimir_tablero(tvisible)
+		print()
+
+	elif opcion == 5:
+		print("Hasta luego, gracias por jugar")
+		exit()
 
 
 # –- Programa principal –-
