@@ -208,7 +208,7 @@ def seleccionar_fila_columnas(columna, fila, mensaje):
 	print(mensaje)
 	fila = int(input('Introduce la fila: ')) - 1
 	columna = int(input('Introduce la columna: ')) - 1
-	return columna, fila
+	return fila, columna
 
 
 # Bucle principal del programa
