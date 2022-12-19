@@ -5,5 +5,10 @@
     "python.analysis.autoImportUserSymbols": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pycodestyleEnabled": false,
-    "python.linting.flake8Enabled": false
+    "python.linting.flake8Enabled": false,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
