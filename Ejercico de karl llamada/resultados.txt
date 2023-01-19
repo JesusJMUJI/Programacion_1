@@ -1,0 +1,6 @@
+Celta de Vigo#0#Málaga#1
+Sevilla#2#Getafe#1
+Mallorca#2#Espanyol#1
+Espanyol#3#Mallorca#2
+Granada#2#Rayo Vallecano#0
+Getafe#1#Sevilla#1

@@ -5,8 +5,10 @@ class Conjunto:
     def __str__(self):
         for elemento in self.conjunto:
             print(elemento)
+    
 
     def pertenece(self, elemento):
+        elemento = None
         if elemento in self.conjunto:
-            print("El elemento " + elemento + ' esta dentro del conjunto')
+            print("El elemento {0} esta dentro del conjunto".format(elemento))
             
