@@ -48,7 +48,7 @@ TEAM_B_INDEX = 2
 SCORE_B_INDEX = 3
 
 
-def SummaryTeam(teamName, data):  
+def SummaryTeam(teamName, data):
     # Returns the following list :
     # [golesAFavor, \ golesEnContra, Puntos]
 
@@ -61,7 +61,7 @@ def SummaryTeam(teamName, data):
             scoredFor = 0
             scoredAgainst = 0
 
-            if (match[TEAM_A_INDEX] == teamName):  # team has played on the A side
+            if (match[TEAM_A_INDEX] == teamName):  # team played on the A side
                 scoredFor = int(data[SCORE_A_INDEX])
                 scoredAgainst = int(match[SCORE_B_INDEX])
 
@@ -80,6 +80,9 @@ def SummaryTeam(teamName, data):
                 totalPoints += 1
 
     return [totalScoredFor, totalScoreAgainst, totalPoints]
+
+
+def WinningTeam(data, teamNames)
 
 MatchData = (ReadDataFromFile('resultados.txt'))
 

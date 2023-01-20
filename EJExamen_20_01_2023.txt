@@ -1,0 +1,27 @@
+Ej1) 
+
+	Cadena de entrada = abc{dario, cano, enar}dario
+
+	Lo que debe printear = abcdario, abccanodario, abcenar
+
+	Cadena de entrada = a{1,2}b{X,Y,Z}z
+
+	Lo que debe printear = a1bXz, a2
+
+	Las llaves pueden estar en cualquier lado
+
+Ej2) Con un archivo "songs.txt"
+
+	Archivo contiene entrada con canciones separadas con #
+
+	Cada entrada tiene 7 datos: Cancion # Album # Artista # Mes # Año # Dia # Semanas en listas # Puesto
+
+	a) Imprime matriz tipo:
+
+	[[Cancion, Album, Artista, Mes, Año, Dia, Semanas en listas, Puesto] \
+
+	sigue...
+
+	b) Recoger canciones con numero concreto de puesto, (creo que era el #1 o algo asi)
+
+	c) No me acuerdo bien .(
